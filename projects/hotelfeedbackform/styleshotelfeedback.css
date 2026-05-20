@@ -1,0 +1,89 @@
+body {
+      background-color: MidnightBlue;
+      color: whitesmoke;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background-color: #ffffff1a;
+      width: 80%;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px black;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 1.1rem;
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]),
+    textarea,
+    select {
+      background-color: #ffffff1a;
+      width: 95%;
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 5px;
+      color: whitesmoke;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #ddd;
+    }
+
+    .options {
+      margin-top: 10px;
+    }
+
+    .options label {
+      display: inline;
+      margin-left: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 25px;
+      padding: 12px;
+      font-size: 1.1rem;
+      background-color: #1abc9c;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #16a085;
+    }
+
+
+
+select {
+  background-color: #1f2a44;   /* solid dark color */
+  color: whitesmoke;
+}
+
+select option {
+  background-color: #1f2a44;
+  color: whitesmoke;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hotel Feedback Form</title>
+  <link rel="stylesheet" href="styleshotelfeedback.css">
+
+  
+    
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="title">Hotel Feedback Form</h1>
+    <p id="description">
+      We appreciate your stay! Please complete this short feedback form.
+    </p>
+
+    <form
+      id="survey-form"
+      
+    >
+
+      <!-- Name -->
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+      />
+
+      <!-- Age -->
+      <label id="number-label" for="number">Age</label>
+      <input
+        type="number"
+        id="number"
+        name="age"
+        min="18"
+        max="100"
+        placeholder="Enter your age (18–100)"
+        required
+      />
+
+      <!-- Dropdown -->
+      <label for="dropdown">How was your stay?</label>
+      <select id="dropdown" name="experience">
+        <option value="">Select an option</option>
+        <option value="excellent">Excellent</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select>
+
+      <!-- Radio buttons -->
+      <label>Would you recommend us?</label>
+      <div class="options">
+        <input type="radio" id="yes" name="recommend" value="yes" />
+        <label for="yes">Yes</label>
+      </div>
+      <div class="options">
+        <input type="radio" id="no" name="recommend" value="no" />
+        <label for="no">No</label>
+      </div>
+
+      <!-- Checkboxes -->
+      <label>What services did you use?</label>
+      <div class="options">
+        <input type="checkbox" id="spa" name="services" value="spa" />
+        <label for="spa">Spa</label>
+      </div>
+      <div class="options">
+        <input type="checkbox" id="room-service" name="services" value="room-service" />
+        <label for="room-service">Room Service</label>
+      </div>
+      <div class="options">
+        <input type="checkbox" id="pool" name="services" value="pool" />
+        <label for="pool">Pool</label>
+      </div>
+
+      <!-- Textarea -->
+      <label for="comments">Additional Comments</label>
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        placeholder="Write your comments here..."
+      ></textarea>
+
+      <!-- Submit -->
+      <button id="submit" type="submit">Submit Feedback</button>
+
+    </form>
+  </div>
+
+</body>
+</html>
