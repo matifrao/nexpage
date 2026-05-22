@@ -56,6 +56,7 @@
   --orange: #f59e0b;
   --beige: #fef3c7;
   --primary: #1f51bc;
+  --modern-black: #111827;
 
   --cyan-soft: rgba(8, 199, 216, 0.08);
 
@@ -456,14 +457,55 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  background: linear-gradient 135deg (var(--strong-500)) 0% (var(--cyan-200))
-    100%;
+   background:
+    linear-gradient(
+      135deg,
+      var(--strong-50) 0%,
+      var(--primary-10) 100%);
+    padding: 58px 20px;
+      color: var(--ink);
 }
 .why-header {
+  max-width: 680px;
 }
+.why-header h2{
+  color: var(--primary-900);
+  font-size: 2rem;
+  line-height: 1.08;
+}
+.why-header p{
+  margin-top: 14px;
+  color: var(--strong-500);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 .why-label {
+  width: fit-content;
+  padding: 8px 12px;
+  color: var(--primary);
+  border: 1px solid var(--primary-100);
+  border-radius: 50px;
+  text-transform: uppercase;
+   margin-bottom:12px;
+   color: var(--primary);
+   font-size: 0.76rem;
+  font-weight: 700;
+  background: var(--white);
 }
 .why-points {
+  display: grid;
+  gap: 16px;
+}
+.why-point{
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 20px;
+  align-items: start;
 }
 .why-points span {
   width: 42px;
@@ -477,8 +519,98 @@ main {
   font-size: 0.82rem;
   font-weight: 700;
 }
-.why-point {
+
+
+.why-point h3 {
+  color: var(--navy);
+  font-size: 1.08rem;
+  line-height: 1.2;
 }
+
+.why-point p {
+  margin-top: 7px;
+  color: var(--strong-500);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+/*  *************************************************** 
+       **************CONTACT US SECTION***********************
+    ******************************************************** */
+.contactus-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.contactus-container h1 {
+  margin-top: 16px;
+  color: var(--modern-black);
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.contactus-container p {
+  margin-top: 18px;
+  color: var(--strong-500);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.contactus-main{
+
+}
+.contactus-label{
+
+  width: fit-content;
+  padding: 8px 12px;
+  color: var(--primary);
+  border: 1px solid var(--primary-100);
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  font-weight: 700;
+  background: var(--white);
+}
+.contactus-btn{
+ display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease; /* smooth effect */
+  /* box-shadow: 0 4px 6px rgba(0,0,0,0.2); subtle shadow */
+  border: 2px solid var(--strong-400);
+  background-color: var(--primary);
+  color: var(--white);}
+
+.contactus-btn:hover {
+  transform: translateY(-2px);
+}
+
+.contactus-card-container{
+  
+max-width: 580px;
+background:var(--navy) ;
+border-radius: 10px;
+padding: 8px 12px;
+margin:18px 0px 0px;
+
+}
+.contactus-card-container span{
+
+text-transform: uppercase;
+color: var(--cyan-600);
+font-weight: 600;
+}
+.contactus-card-container h2{
+  color: var(--soft);
+  font-weight:900;
+}
+
+
+
 
 /*********************************************** =========================
      TABLETS 
@@ -555,6 +687,28 @@ main {
   .service-header h2 {
     font-size: 2.6rem;
   }
+
+  * why choose us area */
+
+  .why-container {
+    padding: 72px 32px;
+  }
+
+  .why-header h2 {
+    font-size: 2.6rem;
+  }
+/* contact us area  */
+
+
+.contactus-container h1 {
+
+
+  font-size: 3.3rem;
+  
+}
+
+
+
 }
 /*********************************************** =========================
      Laptops
@@ -592,6 +746,12 @@ main {
     justify-content: center;
     align-items: center;
     column-gap: 70px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .why-points {
+    gap: 18px;
   }
 }
 
