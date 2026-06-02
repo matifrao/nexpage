@@ -571,7 +571,7 @@ main {
   background: var(--white);
 }
 .contactus-btn{
- display: inline-flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   color: var(--white);
@@ -591,24 +591,42 @@ main {
 
 .contactus-card-container{
   
-max-width: 580px;
+width:min(100%, 420px);
+min-height: 260px;
 background:var(--navy) ;
 border-radius: 10px;
-padding: 8px 12px;
-margin:18px 0px 0px;
+padding:24px;
+box-shadow: var(--shadow);
+
 
 }
 .contactus-card-container span{
 
 text-transform: uppercase;
 color: var(--cyan-600);
-font-weight: 600;
+font-weight: 700;
+font-size: 0.76rem;
 }
 .contactus-card-container h2{
+  margin-top: 18px;
   color: var(--soft);
-  font-weight:900;
+    font-size: 1.8rem;
+    line-height: 1.08;
+}
+.contact-summary-line{
+  height: 12px;
+  width: 85%;
+  margin-top: 28px;
+  border-radius: 20px;
+  background: var(--strong-300); 
 }
 
+.contact-summary-line.short
+{
+  width: 58%;
+  margin-top: 12px;
+  background: var(--cyan-100); 
+}
 
 
 
