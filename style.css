@@ -673,11 +673,21 @@ max-width: 560px;
   background: var(--strong-50);
 }
 .card h5{
-    color: var(--primary);
+  color: var(--primary);
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
 }
+
+
+.card a,p{
+  margin-top: 8px;
+  color: var(--navy);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
 .contact-submit-btn{
     width: 100%;
   margin-top: 4px;

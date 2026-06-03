@@ -27,7 +27,7 @@ form.addEventListener("submit", function (e) {
   .then((response) => {
     console.log("SUCCESS:", response);
 
-    status.textContent = "Message sent successfully!";
+    status.textContent = "Thank you! Your message has been sent successfully. We'll get back to you soon.";
     status.style.color = "green";
 
     form.reset();
