@@ -1183,6 +1183,535 @@ max-width: 560px;
   color: var(--white);
 }
 
+/* Pricing page area***************************
+**************************** */
+
+.pricing-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 56px 20px 38px;
+  color: var(--primary-900);
+  background:
+    linear-gradient(118deg, var(--cyan-soft) 0 18%, transparent 18% 100%),
+    linear-gradient(135deg, var(--soft) 0%, var(--primary-10) 55%, var(--primary-0) 100%);
+}
+
+.pricing-hero-content {
+  max-width: 700px;
+}
+
+.pricing-label {
+  width: fit-content;
+  padding: 8px 12px;
+  color: var(--primary);
+  border: 1px solid var(--primary-100);
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  font-weight: 700;
+  background: var(--white);
+}
+
+.pricing-hero h1 {
+  margin-top: 16px;
+  color: var(--modern-black);
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.pricing-hero p,
+.pricing-plans p,
+.pricing-included p {
+  color: var(--strong-500);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.pricing-hero p {
+  margin-top: 18px;
+}
+
+.pricing-btn,
+.pricing-card a,
+.pricing-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 13px 22px;
+  border: 2px solid var(--strong-400);
+  border-radius: 20px;
+  color: var(--white);
+  background: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pricing-btn:hover,
+.pricing-card a:hover,
+.pricing-cta a:hover {
+  transform: translateY(-2px);
+}
+
+.pricing-summary-card {
+  width: min(100%, 420px);
+  min-height: 280px;
+  padding: 24px;
+  border-radius: 18px;
+  color: var(--white);
+  background: var(--navy);
+  box-shadow: var(--shadow);
+}
+
+.pricing-summary-card span {
+  color: var(--cyan);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pricing-summary-card h2 {
+  margin-top: 18px;
+  font-size: 1.8rem;
+  line-height: 1.08;
+}
+
+.pricing-summary-lines {
+  display: grid;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.pricing-summary-lines i {
+  display: block;
+  height: 14px;
+  border-radius: 20px;
+  background: var(--soft);
+}
+
+.pricing-summary-lines i:nth-child(2) {
+  width: 76%;
+  background: var(--cyan-100);
+}
+
+.pricing-summary-lines i:nth-child(3) {
+  width: 54%;
+  background: var(--primary-300);
+}
+
+.pricing-plans {
+  padding: 58px 20px;
+  background: var(--white);
+  color: var(--ink);
+}
+
+.pricing-header {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.pricing-header .pricing-label {
+  margin: 0 auto;
+}
+
+.pricing-header h2,
+.pricing-included h2,
+.pricing-cta h2 {
+  margin-top: 16px;
+  color: var(--primary-900);
+  font-size: 2rem;
+  line-height: 1.08;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  min-height: 430px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--strong-50);
+}
+
+.pricing-card.featured {
+  border-color: var(--primary-300);
+  background: var(--primary-10);
+  box-shadow: var(--shadow);
+}
+
+.pricing-plan-label {
+  width: fit-content;
+  padding: 6px 10px;
+  color: var(--primary);
+  border: 1px solid var(--primary-100);
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--white);
+}
+
+.pricing-card h3,
+.pricing-included-grid h3 {
+  color: var(--navy);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.pricing-price {
+  color: var(--primary-900);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pricing-description {
+  min-height: 82px;
+}
+
+.pricing-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 4px 0 0;
+  padding-left: 18px;
+  color: var(--strong-600);
+  line-height: 1.6;
+}
+
+.pricing-card a {
+  width: fit-content;
+  align-self: end;
+}
+
+.pricing-included {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  padding: 58px 20px;
+  background: linear-gradient(135deg, var(--strong-50) 0%, var(--primary-10) 100%);
+}
+
+.pricing-included-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.pricing-included-grid div {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.pricing-included-grid span {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.pricing-included-grid h3 {
+  margin-top: 16px;
+}
+
+.pricing-included-grid p {
+  margin-top: 8px;
+}
+
+.pricing-cta {
+  padding: 54px 20px;
+  color: var(--white);
+  background: var(--navy);
+  text-align: center;
+}
+
+.pricing-cta h2 {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+/* Portfolio page area***************************
+**************************** */
+
+.portfolio-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 56px 20px 38px;
+  color: var(--primary-900);
+  background:
+    linear-gradient(118deg, var(--cyan-soft) 0 18%, transparent 18% 100%),
+    linear-gradient(135deg, var(--soft) 0%, var(--primary-10) 55%, var(--primary-0) 100%);
+}
+
+.portfolio-hero-content {
+  max-width: 700px;
+}
+
+.portfolio-label {
+  width: fit-content;
+  padding: 8px 12px;
+  color: var(--primary);
+  border: 1px solid var(--primary-100);
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  font-weight: 700;
+  background: var(--white);
+}
+
+.portfolio-hero h1 {
+  margin-top: 16px;
+  color: var(--modern-black);
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.portfolio-hero p,
+.portfolio-projects p,
+.portfolio-services p {
+  color: var(--strong-500);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.portfolio-hero p {
+  margin-top: 18px;
+}
+
+.portfolio-btn,
+.portfolio-card a,
+.portfolio-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 13px 22px;
+  border: 2px solid var(--strong-400);
+  border-radius: 20px;
+  color: var(--white);
+  background: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio-btn:hover,
+.portfolio-card a:hover,
+.portfolio-cta a:hover {
+  transform: translateY(-2px);
+}
+
+.portfolio-hero-image {
+  width: min(100%, 440px);
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--navy);
+  box-shadow: var(--shadow);
+}
+
+.portfolio-hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-projects {
+  padding: 58px 20px;
+  background: var(--white);
+  color: var(--ink);
+}
+
+.portfolio-header {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.portfolio-header .portfolio-label {
+  margin: 0 auto;
+}
+
+.portfolio-header h2,
+.portfolio-services h2,
+.portfolio-cta h2 {
+  margin-top: 16px;
+  color: var(--primary-900);
+  font-size: 2rem;
+  line-height: 1.08;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--strong-50);
+}
+
+.portfolio-preview {
+  min-height: 230px;
+  padding: 22px;
+  display: grid;
+  align-content: end;
+  gap: 12px;
+  background: var(--navy);
+}
+
+.portfolio-preview span {
+  width: fit-content;
+  padding: 7px 10px;
+  color: var(--navy);
+  border-radius: 50px;
+  background: var(--cyan-100);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.portfolio-preview i {
+  display: block;
+  height: 14px;
+  border-radius: 20px;
+  background: var(--soft);
+}
+
+.portfolio-preview i:nth-child(3) {
+  width: 76%;
+}
+
+.portfolio-preview i:nth-child(4) {
+  width: 52%;
+}
+
+.hotel-preview {
+  background:
+    linear-gradient(135deg, rgba(8, 199, 216, 0.25), transparent 62%),
+    var(--navy);
+}
+
+.shop-preview {
+  background:
+    linear-gradient(135deg, rgba(31, 81, 188, 0.32), transparent 62%),
+    var(--strong-800);
+}
+
+.portfolio-card-content {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+}
+
+.portfolio-type {
+  width: fit-content;
+  padding: 6px 10px;
+  color: var(--primary);
+  border: 1px solid var(--primary-100);
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--white);
+}
+
+.portfolio-card h3,
+.portfolio-service-grid h3 {
+  color: var(--navy);
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.portfolio-card a {
+  width: fit-content;
+}
+
+.portfolio-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  padding: 58px 20px;
+  background: linear-gradient(135deg, var(--strong-50) 0%, var(--primary-10) 100%);
+}
+
+.portfolio-service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.portfolio-service-grid div {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.portfolio-service-grid span {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.portfolio-service-grid h3 {
+  margin-top: 16px;
+}
+
+.portfolio-service-grid p {
+  margin-top: 8px;
+}
+
+.portfolio-cta {
+  padding: 54px 20px;
+  color: var(--white);
+  background: var(--navy);
+  text-align: center;
+}
+
+.portfolio-cta h2 {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
 
 
 /*********************************************** =========================
@@ -1344,6 +1873,63 @@ max-width: 560px;
   .process-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  /* pricing page area */
+  .pricing-hero {
+    padding: 72px 32px 48px;
+  }
+
+  .pricing-hero h1 {
+    font-size: 3.3rem;
+  }
+
+  .pricing-plans,
+  .pricing-included {
+    padding: 72px 32px;
+  }
+
+  .pricing-header h2,
+  .pricing-included h2,
+  .pricing-cta h2 {
+    font-size: 2.6rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .pricing-included-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* portfolio page area */
+  .portfolio-hero {
+    padding: 72px 32px 48px;
+  }
+
+  .portfolio-hero h1 {
+    font-size: 3.3rem;
+  }
+
+  .portfolio-projects,
+  .portfolio-services {
+    padding: 72px 32px;
+  }
+
+  .portfolio-header h2,
+  .portfolio-services h2,
+  .portfolio-cta h2 {
+    font-size: 2.6rem;
+  }
+
+  .portfolio-card {
+    grid-template-columns: minmax(260px, 38%) minmax(0, 1fr);
+  }
+
+  .portfolio-service-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 /*********************************************** =========================
      Laptops
@@ -1445,6 +2031,54 @@ max-width: 560px;
   }
 
   .services-process {
+    grid-template-columns: minmax(0, 360px) minmax(0, 720px);
+    justify-content: center;
+    align-items: start;
+    column-gap: 72px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  /* pricing page area */
+  .pricing-hero {
+    grid-template-columns: minmax(0, 650px) minmax(300px, 420px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 70px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .pricing-plans {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .pricing-included {
+    grid-template-columns: minmax(0, 360px) minmax(0, 720px);
+    justify-content: center;
+    align-items: start;
+    column-gap: 72px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  /* portfolio page area */
+  .portfolio-hero {
+    grid-template-columns: minmax(0, 650px) minmax(300px, 440px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 70px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .portfolio-projects {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .portfolio-services {
     grid-template-columns: minmax(0, 360px) minmax(0, 720px);
     justify-content: center;
     align-items: start;
