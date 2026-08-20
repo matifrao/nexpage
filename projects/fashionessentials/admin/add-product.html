@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Product | Fashion Essentials Admin</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <div class="admin-layout">
+        <aside id="sidebar"></aside>
+
+        <div class="admin-main">
+            <header id="topbar"></header>
+
+            <main class="dashboard">
+                <section class="page-header">
+                    <div>
+                        <h1 id="form-title">Add Product</h1>
+                        <p>Create or update products shown on shop.html.</p>
+                    </div>
+
+                    <a class="admin-button secondary" href="products.html">Back to Products</a>
+                </section>
+
+                <form class="admin-form" id="product-form">
+                    <input id="product-id" type="hidden">
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="product-name">Product Name</label>
+                            <input id="product-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-category">Category</label>
+                            <input id="product-category" list="category-options" placeholder="Choose or create category">
+                            <datalist id="category-options"></datalist>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="product-price">Price</label>
+                            <input id="product-price" placeholder="PKR 499" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-stock">Stock</label>
+                            <input id="product-stock" type="number" min="0" value="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-status">Status</label>
+                        <select id="product-status">
+                            <option>Active</option>
+                            <option>Draft</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-image-upload">Product Image</label>
+                        <div class="image-upload">
+                            <img id="product-image-preview" alt="Product preview">
+                            <div>
+                                <input id="product-image-upload" type="file" accept="image/*">
+                                <input id="product-image" type="hidden">
+                                <input id="product-image-path" placeholder="Or paste image path / URL">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-images">Other Images</label>
+                        <textarea id="product-images" placeholder="images/products/cat1/p1.jpeg, images/products/cat1/p2.jpeg"></textarea>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="product-colors">Colors</label>
+                            <div class="option-builder">
+                                <select id="color-picker"></select>
+                                <input id="new-color" placeholder="Create new color">
+                                <button class="admin-button secondary" type="button" data-add-option="color">Add</button>
+                            </div>
+                            <div class="option-chips" id="color-chips"></div>
+                            <input id="product-colors" type="hidden">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product-sizes">Sizes</label>
+                            <div class="option-builder">
+                                <select id="size-picker"></select>
+                                <input id="new-size" placeholder="Create new size">
+                                <button class="admin-button secondary" type="button" data-add-option="size">Add</button>
+                            </div>
+                            <div class="option-chips" id="size-chips"></div>
+                            <input id="product-sizes" type="hidden">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-description">Description</label>
+                        <textarea id="product-description" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product-related">Linked / Related Products</label>
+                        <input id="product-related" placeholder="Premium Hijab Tube Caps, 4-in-One Hijab Caps">
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="admin-button" type="submit">Save Product</button>
+                        <a class="admin-button secondary" href="products.html">Cancel</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+
+    <script src="../js/products-data.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/admin-products.js"></script>
+</body>
